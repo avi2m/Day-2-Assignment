@@ -1,0 +1,323 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #1d1d1d;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(244, 244, 244);
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+.view1 {
+  max-width: 2000px;
+  margin: auto;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+
+}
+
+.view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.view1 .top {
+  width: 100%;
+
+}
+
+.top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+.view1 .bottom {
+  background-color: #292929;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.view1 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.view1 .bottom h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.view1 .bottom p {
+  font-weight: 100;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.view1 button {
+  width: fit-content;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.view2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1rem;
+}
+
+.view2 .top,
+.view2 .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* better than space-around */
+}
+
+.element {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.element h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.element small {
+  opacity: 0.6;
+}
+
+.view3 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.view3 .top {
+  width: 100%;
+}
+
+.view3 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+.view3 .bottom>p {
+  text-transform: uppercase;
+}
+
+.view3 .bottom {
+  background-color: #292929;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.view3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.view3 .bottom h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.view3 .bottom p {
+  font-weight: 100;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.view4 .top {
+  width: 100%;
+}
+
+.view4 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+
+.view4 .bottom>p {
+  text-transform: uppercase;
+}
+
+.view4 .bottom {
+  background-color: #292929;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.view4 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.view4 .bottom h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.view4 .bottom p {
+  font-weight: 100;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+
+@media (min-width:900px) {
+  .view1 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+
+  }
+
+  .view1 top,
+  .view1 .bottom {
+    width: 50%;
+  }
+
+  .view1 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  view1 .bottom .text {
+    gap: 1.5rem;
+  }
+
+  .view1 .bottom .text h1 {
+    font-size: 3.5rem;
+
+  }
+
+  .view1 .bottom .text p {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .view2 {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+    padding: 4rem;
+  }
+
+  .view2 .top,
+  .view2 .bottom {
+    display: contents;
+  }
+
+  .element {
+    width: 23%;
+    text-align: left;
+  }
+
+  .element h1 {
+    font-size: 3rem;
+  }
+
+  .view3 {
+    flex-direction: row-reverse;
+    padding: 1rem 4rem;
+  }
+
+  .view3 .top,
+  .view3 .bottom {
+    width: 50%;
+  }
+
+  .view3 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  .view3 .bottom .paragraph {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .view3 .bottom .paragraph p {
+    font-size: 1rem;
+
+  }
+
+  .view4 {
+    flex-direction: row;
+  }
+
+  .view4 .top,
+  .view4 .bottom {
+    width: 50%;
+  }
+
+  .view4 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  .view4 .bottom .paragraph {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .view4 .bottom .paragraph p {
+    font-size: 1rem;
+
+  }
+
+}
